@@ -1,3 +1,4 @@
+import bloodbridgeImage from "../assets/projects/bloodbridge.png";
 export const projects = [
     {
         id: "bloodbridge",
