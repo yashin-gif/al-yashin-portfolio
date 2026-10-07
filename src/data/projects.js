@@ -1,140 +1,98 @@
-import bloodbridgeImage from "../assets/projects/bloodbridge.png";
+// প্রজেক্টের সব তথ্য শুধু এই ফাইলে।
+// challenges আর futurePlans-এ প্রতিটা লাইন এক-একটা বাক্য।
+// ফাঁকা থাকলে Details পাতায় ওই অংশ দেখাবে না।
+// liveUrl বা githubUrl না থাকলে null রাখো, ওই বাটন দেখাবে না।
+
 export const projects = [
     {
         id: "bloodbridge",
-        title: "BloodBridge",
+        name: "BloodBridge",
         category: "Full Stack Web Application",
-
+        tagline: "Blood Donation & Emergency Assistance Platform",
+        summary:
+            "Bangladesh-focused platform connecting blood donors with people in emergency need.",
         description:
-            "A Bangladesh-focused blood donation and emergency assistance platform designed to connect blood seekers with suitable donors and make emergency blood requests easier to manage.",
-
+            "BloodBridge is a full-stack platform with a React.js frontend and a FastAPI backend, connected through RESTful APIs. It brings blood donors and people in emergency need together across Bangladesh.",
         image: "/images/projects/bloodbridge.png",
-
-        technologies: [
+        imageFit: "contain",
+        techStack: [
             "React.js",
             "Tailwind CSS",
             "FastAPI",
             "PostgreSQL",
             "REST API",
+            "JWT Authentication",
         ],
-
-        liveLink: "#",
-        githubLink: "#",
-
         features: [
-            "Blood request creation and management",
-            "Donor search and matching",
-            "User authentication and authorization",
-            "Blood group and location based filtering",
-            "Emergency blood request support",
-            "Dashboard for users and activity tracking",
-            "Admin management system",
-            "Bilingual English and Bangla interface",
+            "JWT authentication, user profiles, blood requests, and donor search with availability management.",
+            "Donor matching based on blood group, location, and donor availability.",
+            "Request filtering with urgency and status management.",
+            "Dashboards and role-based admin features.",
         ],
-
-        challenges:
-            "One of the main challenges was designing a system that could connect blood requests with suitable donors based on blood group, location and availability. Building the frontend, backend API, authentication and database integration together also required careful planning and debugging.",
-
-        futureImprovements:
-            "Future improvements may include real-time communication between donors and blood seekers, advanced donor matching, notifications, location-based services and a dedicated mobile application.",
+        liveUrl: "https://bloodbridge-frontend-1ryf.onrender.com/",
+        githubUrl: "https://github.com/yashin-gif/bloodbridge-frontend",
+        githubLabel: "Client Repository",
+        challenges: [
+            "API integration: Keeping the React frontend and the FastAPI backend in sync, so that blood requests, donor details and user data are created, updated and displayed correctly.",
+            "Donor matching: Designing the logic that finds suitable donors based on blood group, location and availability.",
+            "Authentication and authorization: Implementing JWT-based login and role-based access, so users can manage only their own data and requests while admin features stay protected.",
+        ],
+        futurePlans: [
+            "Add real-time chat between donors and blood requesters.",
+            "Build smarter donor matching and a location-based search.",
+            "Develop an Android app alongside the website, with a notification system.",
+        ],
     },
-
     {
-        id: "project-two",
-        title: "Project Two",
-        category: "Web Application",
-
+        id: "portfolio",
+        name: "Personal Portfolio",
+        category: "Frontend Web Application",
+        tagline: "Developer Portfolio Website",
+        summary:
+            "Responsive portfolio website showcasing skills, projects, education, and experience.",
         description:
-            "A practical web application built to solve a specific problem with a clean interface and modern development technologies.",
-
-        image: "/images/projects/project-2.png",
-
-        technologies: [
-            "React.js",
-            "Tailwind CSS",
-            "REST API",
-        ],
-
-        liveLink: "#",
-        githubLink: "#",
-
+            "A responsive developer portfolio that presents my skills, education, experience and projects in one place, built with reusable React components for both desktop and mobile.",
+        image: "/images/projects/portfolio.png",
+        techStack: ["React.js", "Vite", "JavaScript", "Tailwind CSS"],
         features: [
-            "Responsive user interface",
-            "Component-based development",
-            "API integration",
-            "Practical application workflow",
+            "Reusable React components with a responsive layout for desktop and mobile.",
+            "Sections for about, skills, education, experience, and projects.",
+            "Direct contact actions through email, phone, GitHub, and LinkedIn.",
         ],
-
-        challenges:
-            "The project focuses on understanding requirements, designing a practical interface and connecting frontend functionality with backend services.",
-
-        futureImprovements:
-            "More advanced features, authentication and improved backend functionality can be added in future versions.",
+        liveUrl: "https://al-yashin-portfolio.vercel.app/",
+        githubUrl: "https://github.com/yashin-gif/al-yashin-portfolio",
+        githubLabel: "GitHub Repository",
+        challenges: [
+            "Responsive design: Making every section work well on both desktop and mobile screens.",
+            "Navigation across pages: Making section links work from the project details pages, so the visitor lands on the right section of the home page.",
+            "Information design: Presenting a lot of information (about, skills, education, experience and projects) clearly, without making the page feel crowded.",
+        ],
+        futurePlans: [
+            "Add more real-world projects, each with a detailed case study.",
+            "Add more interactive and dynamic features.",
+            "Improve performance, accessibility and SEO.",
+        ],
     },
-
     {
-        id: "project-three",
-        title: "Project Three",
-        category: "Web Application",
-
+        id: "fastapi-todo",
+        name: "FastAPI Todo App",
+        category: "Backend API Application",
+        tagline: "REST API Application",
+        summary:
+            "Backend-focused task manager demonstrating API design, database integration, and authentication.",
         description:
-            "A responsive application focused on practical functionality, user experience and clean component-based development.",
-
-        image: "/images/projects/project-3.png",
-
-        technologies: [
-            "React.js",
-            "Tailwind CSS",
-            "JavaScript",
-        ],
-
-        liveLink: "#",
-        githubLink: "#",
-
+            "A backend-focused task manager that demonstrates API design, database integration and authentication, built with FastAPI and PostgreSQL.",
+        image: "/images/projects/fastapi-todo.png",
+        techStack: ["Python", "FastAPI", "PostgreSQL", "REST API"],
         features: [
-            "Responsive design",
-            "Reusable React components",
-            "Clean user interface",
-            "Interactive functionality",
+            "RESTful endpoints for creating, reading, updating, and deleting tasks.",
+            "PostgreSQL integration for persistent data storage.",
+            "Authentication to protect API routes.",
         ],
-
-        challenges:
-            "The main focus was building a clean and responsive application while keeping the code organized and maintainable.",
-
-        futureImprovements:
-            "Additional functionality, backend integration and improved user experience can be added in future development.",
-    },
-
-    {
-        id: "project-four",
-        title: "Project Four",
-        category: "Web Application",
-
-        description:
-            "Another practical project focused on building useful features, clean interfaces and reliable functionality.",
-
-        image: "/images/projects/project-4.png",
-
-        technologies: [
-            "React.js",
-            "JavaScript",
-            "REST API",
-        ],
-
-        liveLink: "#",
-        githubLink: "#",
-
-        features: [
-            "Responsive interface",
-            "REST API integration",
-            "Practical functionality",
-            "Clean component structure",
-        ],
-
-        challenges:
-            "The project involved understanding the problem, planning the application structure and implementing the required functionality.",
-
-        futureImprovements:
-            "The application can be extended with authentication, database integration and additional features.",
+        liveUrl: null,
+        githubUrl: "https://github.com/yashin-gif/fastapi_todos",
+        githubLabel: "GitHub Repository",
+        challenges: [],
+        futurePlans: [],
     },
 ];

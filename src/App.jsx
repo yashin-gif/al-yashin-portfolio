@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollManager from "./components/ScrollManager";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -11,14 +12,13 @@ import ProjectDetails from "./pages/ProjectDetails";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-
 function App() {
   return (
     <BrowserRouter>
+      <ScrollManager />
       <Navbar />
 
       <Routes>
-
         <Route
           path="/"
           element={
@@ -31,20 +31,12 @@ function App() {
               <Projects />
               <Contact />
               <Footer />
-
             </main>
           }
         />
 
-        <Route
-          path="/projects"
-          element={<ProjectsPage />}
-        />
-        <Route
-          path="/projects/:projectId"
-          element={<ProjectDetails />}
-        />
-        
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:projectId" element={<ProjectDetails />} />
       </Routes>
     </BrowserRouter>
   );
