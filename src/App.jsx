@@ -11,6 +11,8 @@ import ProjectsPage from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollReveal from "./components/ScrollReveal";
+
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
               <Projects />
               <Contact />
               <Footer />
+              <ScrollManager />
+              <ScrollReveal />
+              <Navbar />
             </main>
           }
         />

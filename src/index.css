@@ -8,3 +8,37 @@ body {
   margin: 0;
   font-family: Inter, sans-serif;
 }
+
+
+html,
+body {
+    overflow-x: clip;
+}
+
+html,
+body {
+    overflow-x: clip; /* পাশ থেকে আসার সময় নিচে scrollbar আসা ঠেকায় */
+}
+
+[data-reveal] {
+    opacity: 0;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: transform, opacity;
+}
+[data-reveal="left"]  { transform: translateX(-64px); }
+[data-reveal="right"] { transform: translateX(64px); }
+[data-reveal="up"]    { transform: translateY(40px); }
+
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

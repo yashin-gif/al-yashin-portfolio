@@ -1,13 +1,22 @@
 import { projects } from "../../data/projects";
 import ProjectCard from "./ProjectCard";
+import Reveal from "../Reveal";
 
-const ProjectGrid = ({ limit }) => {
-    const list = limit ? projects.slice(0, limit) : projects;
+const directions = ["left", "up", "right"];
 
+const ProjectGrid = () => {
     return (
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {list.map((project) => (
-                <ProjectCard key={project.id} project={project} />
+            {projects.map((project, index) => (
+                <Reveal
+                    key={project.id}
+                    direction={directions[index % 3]}
+                    delay={index * 120}
+                    once={false}
+                    className="h-full"
+                >
+                    <ProjectCard project={project} />
+                </Reveal>
             ))}
         </div>
     );
