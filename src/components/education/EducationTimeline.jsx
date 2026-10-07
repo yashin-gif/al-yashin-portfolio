@@ -82,9 +82,7 @@ const EducationTimeline = () => {
     return (
         <div className="relative mx-auto max-w-6xl">
 
-            {/* ========================================
-                CENTER TIMELINE
-            ======================================== */}
+    
             <div
                 className="
                     absolute
@@ -99,9 +97,7 @@ const EducationTimeline = () => {
                 "
             />
 
-            {/* ========================================
-                EDUCATION ITEMS
-            ======================================== */}
+
             <div className="space-y-8 md:space-y-10">
                 {education.map((item, index) => {
                     const isVisible =
@@ -119,9 +115,7 @@ const EducationTimeline = () => {
                             data-index={index}
                             className="relative grid md:grid-cols-2"
                         >
-                            {/* ========================================
-                                TIMELINE DOT
-                            ======================================== */}
+                          
                             <span
                                 className={`
                                     absolute
@@ -161,9 +155,7 @@ const EducationTimeline = () => {
                                 `}
                             />
 
-                            {/* ========================================
-                                CONNECTOR
-                            ======================================== */}
+
                             <span
                                 className={`
                                     absolute
@@ -188,9 +180,7 @@ const EducationTimeline = () => {
                                 `}
                             />
 
-                            {/* ========================================
-                                CARD
-                            ======================================== */}
+                            
                             <div
                                 className={`
                                     ${
@@ -221,7 +211,7 @@ const EducationTimeline = () => {
                                     setActiveItem(index)
                                 }
                             >
-                                {/* Existing Education Card */}
+                              
                                 <div
                                     className={`
                                         rounded-2xl

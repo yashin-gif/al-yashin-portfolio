@@ -29,7 +29,7 @@ const ExperienceCard = ({
                 }
             `}
         >
-            {/* Icon */}
+   
             <div
                 className={`
                     flex
@@ -61,12 +61,12 @@ const ExperienceCard = ({
                 <Icon size={18} />
             </div>
 
-            {/* Title */}
+         
             <h3 className="mt-3 text-base font-bold leading-snug text-white">
                 {title}
             </h3>
 
-            {/* Description */}
+      
             <p className="mt-2 text-xs leading-5 text-slate-400">
                 {description}
             </p>

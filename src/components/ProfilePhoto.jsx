@@ -2,10 +2,8 @@ const ProfilePhoto = ({ src, alt = "Al Yashin" }) => {
     return (
         <div className="relative aspect-square w-[320px] sm:w-[360px] xl:w-[440px]">
 
-            {/* Glow */}
             <div className="absolute left-[12.5%] top-[12.5%] h-[75%] w-[75%] rounded-full bg-teal-400/15 blur-3xl" />
 
-            {/* Photo */}
             <div className="absolute left-[12.5%] top-[12.5%] h-[75%] w-[75%] overflow-hidden rounded-full border border-slate-700">
                 <img
                     src={src}
@@ -14,17 +12,17 @@ const ProfilePhoto = ({ src, alt = "Al Yashin" }) => {
                 />
             </div>
 
-            {/* Rings + curved text */}
+     
             <svg
                 viewBox="0 0 440 440"
                 className="pointer-events-none absolute inset-0 h-full w-full"
             >
                 <defs>
-                    {/* নিচের দিক দিয়ে বাম থেকে ডানে অর্ধবৃত্ত */}
+              
                     <path id="bottomArc" d="M 22 220 A 198 198 0 0 0 418 220" />
                 </defs>
 
-                {/* ছবির কাছের ring */}
+               
                 <circle
                     cx="220"
                     cy="220"
@@ -34,7 +32,7 @@ const ProfilePhoto = ({ src, alt = "Al Yashin" }) => {
                     className="stroke-teal-400/40"
                 />
 
-                {/* বাইরের পাতলা ring */}
+
                 <circle
                     cx="220"
                     cy="220"
@@ -44,11 +42,11 @@ const ProfilePhoto = ({ src, alt = "Al Yashin" }) => {
                     className="stroke-slate-600/40"
                 />
 
-                {/* বাঁকানো লেখা */}
+               
                 <text letterSpacing="1.5" className="fill-slate-300 text-[13px] font-semibold">
                     <textPath href="#bottomArc" startOffset="50%" textAnchor="middle">
                         <tspan className="fill-teal-400 text-[18px] font-extrabold">
-                            110+
+                            130+
                         </tspan>{" "}
                         PROBLEMS SOLVED • LEETCODE • CODEFORCES
                     </textPath>

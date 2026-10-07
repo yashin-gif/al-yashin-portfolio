@@ -57,7 +57,7 @@ const Projects = () => {
         <main className="min-h-screen bg-slate-900 pb-24 pt-32">
             <div className="mx-auto w-[92%] max-w-[1240px]">
 
-                {/* Heading */}
+        
                 <div className="mb-14 text-center">
                     <p className="mb-3 text-sm font-semibold uppercase tracking-[3px] text-teal-400">
                         My Projects
@@ -74,7 +74,7 @@ const Projects = () => {
                     </p>
                 </div>
 
-                {/* Project Grid */}
+         
                 <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
                         <article
@@ -96,7 +96,7 @@ const Projects = () => {
                                 </span>
                             </div>
 
-                            {/* Content */}
+                   
                             <div className="p-6">
                                 <h2 className="text-xl font-bold text-white">
                                     {project.title}
@@ -106,7 +106,7 @@ const Projects = () => {
                                     {project.description}
                                 </p>
 
-                                {/* Technologies */}
+                      
                                 <div className="mt-5 flex flex-wrap gap-2">
                                     {project.technologies.map((technology) => (
                                         <span
@@ -118,7 +118,7 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                {/* Actions */}
+              
                                 <div className="mt-6 flex items-center justify-between border-t border-slate-700/70 pt-5">
                                     <a
                                         href={project.liveLink}
@@ -136,7 +136,7 @@ const Projects = () => {
                                     </a>
                                 </div>
 
-                                {/* Details */}
+                             
                                 <a
                                     href="#"
                                     className="mt-4 flex items-center justify-center gap-2 rounded-lg border border-slate-700 bg-slate-900/40 py-2.5 text-sm font-semibold text-slate-200 transition-all hover:border-teal-400/30 hover:bg-teal-400/5 hover:text-teal-300"

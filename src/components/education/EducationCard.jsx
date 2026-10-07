@@ -19,26 +19,26 @@ const EducationCard = ({
                     : "border-slate-700/70 bg-slate-800/50"
             }`}
         >
-            {/* Header */}
+
             <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                 <div className="min-w-0">
-                    {/* Status */}
+               
                     <p className="text-[11px] font-bold uppercase tracking-[2px] text-teal-400">
                         {label}
                     </p>
 
-                    {/* Degree */}
+   
                     <h3 className="mt-1.5 text-lg font-bold leading-snug text-white sm:text-xl">
                         {title}
                     </h3>
 
-                    {/* Institution */}
+  
                     <p className="mt-1.5 text-sm font-medium text-slate-200">
                         {institution}
                     </p>
                 </div>
 
-                {/* Period */}
+
                 <span className="inline-flex w-fit shrink-0 items-center gap-1.5 rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1.5 text-xs font-medium text-slate-300">
                     <Calendar
                         size={13}
@@ -48,7 +48,7 @@ const EducationCard = ({
                 </span>
             </div>
 
-            {/* Meta */}
+
             <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-slate-400">
                 <span className="inline-flex items-center gap-1.5">
                     <MapPin
@@ -70,7 +70,7 @@ const EducationCard = ({
                 )}
             </div>
 
-            {/* Description */}
+
             <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-400">
                 {description}
             </p>

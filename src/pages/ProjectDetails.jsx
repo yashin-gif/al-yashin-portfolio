@@ -48,7 +48,7 @@ const ProjectDetails = () => {
 
             <div className="mx-auto w-[92%] max-w-[1100px]">
 
-                {/* Back */}
+             
                 <Link
                     to="/projects"
                     className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-slate-400 transition-colors hover:text-teal-300"
@@ -57,7 +57,7 @@ const ProjectDetails = () => {
                     Back to Projects
                 </Link>
 
-                {/* Header */}
+     
                 <div className="mb-10">
 
                     <p className="mb-3 text-sm font-semibold uppercase tracking-[3px] text-teal-400">
@@ -74,7 +74,7 @@ const ProjectDetails = () => {
 
                 </div>
 
-                {/* Project Image */}
+               
                 <div className="overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-800/50">
 
                     <div className="aspect-[16/9] overflow-hidden bg-slate-800">
@@ -89,7 +89,7 @@ const ProjectDetails = () => {
 
                 </div>
 
-                {/* Actions */}
+          
                 <div className="mt-6 flex flex-wrap gap-3">
 
                     <a
@@ -113,7 +113,7 @@ const ProjectDetails = () => {
 
                 </div>
 
-                {/* Overview */}
+    
                 <section className="mt-14">
 
                     <h2 className="text-2xl font-bold text-white">
@@ -129,7 +129,7 @@ const ProjectDetails = () => {
 
                 </section>
 
-                {/* Features */}
+     
                 <section className="mt-14">
 
                     <h2 className="text-2xl font-bold text-white">
@@ -161,7 +161,7 @@ const ProjectDetails = () => {
 
                 </section>
 
-                {/* Technologies */}
+            
                 <section className="mt-14">
 
                     <h2 className="text-2xl font-bold text-white">
@@ -186,7 +186,7 @@ const ProjectDetails = () => {
 
                 </section>
 
-                {/* Challenges */}
+         
                 <section className="mt-14">
 
                     <h2 className="text-2xl font-bold text-white">
@@ -202,7 +202,7 @@ const ProjectDetails = () => {
 
                 </section>
 
-                {/* Future Improvements */}
+       
                 <section className="mt-14">
 
                     <h2 className="text-2xl font-bold text-white">
@@ -218,7 +218,7 @@ const ProjectDetails = () => {
 
                 </section>
 
-                {/* Bottom Navigation */}
+     
                 <div className="mt-16 flex flex-col gap-4 border-t border-slate-700/70 pt-8 sm:flex-row sm:items-center sm:justify-between">
 
                     <Link

@@ -41,7 +41,7 @@ const Navbar = () => {
 
             <div className="mx-auto flex h-[68px] w-[92%] max-w-[1240px] items-center justify-between">
 
-                {/* Logo */}
+         
                 <button
                     type="button"
                     onClick={() => handleNavClick("contact")}
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </span>
                 </button>
 
-                {/* Desktop Navigation */}
+            
                 <nav className="hidden items-center gap-7 min-[901px]:flex">
                     {navItems.map((item) => (
                         <button
@@ -77,7 +77,7 @@ const Navbar = () => {
                     ))}
                 </nav>
 
-                {/* Resume */}
+            
                 <a
                     href="/resume/Al-Yashin-Resume.pdf"
                     download
@@ -87,7 +87,7 @@ const Navbar = () => {
                     Resume
                 </a>
 
-                {/* Mobile Menu Button */}
+         
                 <button
                     type="button"
                     onClick={() => setIsOpen(!isOpen)}
@@ -98,7 +98,6 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
             <div
                 className={`${
                     isOpen ? "flex" : "hidden"

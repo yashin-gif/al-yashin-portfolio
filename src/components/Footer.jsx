@@ -7,10 +7,10 @@ const Footer = () => {
         <footer className="border-t border-slate-700/70 bg-[#07111f]">
             <div className="mx-auto w-[92%] max-w-[1240px] py-7 sm:py-8">
 
-                {/* Main Footer */}
+               
                 <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
 
-                    {/* Brand */}
+            
                     <div>
                         <a
                             href="/#home"
@@ -26,7 +26,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    {/* Links */}
+            
                     <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs">
                         <a
                             href="/#about"
@@ -65,7 +65,7 @@ const Footer = () => {
                         </a>
                     </div>
 
-                    {/* Back To Top */}
+                    
                     <a
                         href="/#home"
                         aria-label="Back to top"
@@ -75,7 +75,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                {/* Bottom */}
+    
                 <div className="mt-6 flex flex-col gap-2 border-t border-slate-700/70 pt-5 text-center text-[11px] text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:text-left">
                     <p>
                         © {currentYear} Fas Al Yashin. All rights reserved.

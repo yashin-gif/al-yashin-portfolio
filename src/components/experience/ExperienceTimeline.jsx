@@ -8,7 +8,7 @@ const ExperienceTimeline = () => {
 
     const itemRefs = useRef([]);
 
-    // Scroll Reveal
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -46,7 +46,7 @@ const ExperienceTimeline = () => {
     return (
         <div className="relative mx-auto max-w-[1050px]">
 
-            {/* Center Timeline */}
+       
             <div
                 className="
                     absolute
@@ -61,7 +61,7 @@ const ExperienceTimeline = () => {
                 "
             />
 
-            {/* Timeline Items */}
+      
             <div className="space-y-5 md:space-y-6">
                 {experiences.map((experience, index) => {
                     const isVisible =
@@ -78,9 +78,8 @@ const ExperienceTimeline = () => {
                                     element;
                             }}
                             data-index={index}
-                            className="relative grid md:grid-cols-2"
-                        >
-                            {/* Timeline Dot */}
+                            className="relative grid md:grid-cols-2">
+                    
                             <span
                                 className={`
                                     absolute
@@ -120,7 +119,7 @@ const ExperienceTimeline = () => {
                                 `}
                             />
 
-                            {/* Connector */}
+                  
                             <span
                                 className={`
                                     absolute
@@ -145,7 +144,7 @@ const ExperienceTimeline = () => {
                                 `}
                             />
 
-                            {/* Card Position + Reveal */}
+                   
                             <div
                                 className={`
                                     ${

@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { Mail } from "lucide-react";
 
-// এখানে তোমার নিজের link বসাও
+
 const links = [
     {
         name: "GitHub",
@@ -20,7 +20,7 @@ const links = [
     },
     {
         name: "Email",
-        href: "mailto:fasalyashin@email.com",
+        href: "mailto:fasalyashin@gmail.com",
         icon: Mail,
     },
 ];

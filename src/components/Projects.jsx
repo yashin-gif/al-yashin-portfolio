@@ -8,15 +8,14 @@ const Projects = () => {
     return (
         <section
             id="projects"
-            className="relative overflow-hidden bg-slate-900 py-16 sm:py-20"
-        >
-            {/* Background Glow */}
+            className="relative overflow-hidden bg-slate-900 py-16 sm:py-20">
+           
             <div className="pointer-events-none absolute -left-40 top-10 h-80 w-80 rounded-full bg-teal-400/5 blur-3xl" />
             <div className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-blue-500/5 blur-3xl" />
 
             <div className="relative mx-auto w-[92%] max-w-[1240px]">
 
-                {/* Heading */}
+            
                 <div className="mb-10 text-center">
                     <p className="mb-2 text-xs font-semibold uppercase tracking-[3px] text-teal-400">
                         Projects
@@ -33,14 +32,14 @@ const Projects = () => {
                     </p>
                 </div>
 
-                {/* Featured Projects */}
+            
                 <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                     {featuredProjects.map((project) => (
                         <div
                             key={project.id}
                             className="group overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-800/50 transition-all duration-200 hover:-translate-y-1 hover:border-teal-400/30"
                         >
-                            {/* Project Image */}
+                     
                             <div className="relative h-44 overflow-hidden bg-slate-800">
                                 <img
                                     src={project.image}
@@ -55,7 +54,7 @@ const Projects = () => {
                                 </span>
                             </div>
 
-                            {/* Content */}
+                        
                             <div className="p-5">
                                 <h3 className="text-lg font-bold text-white">
                                     {project.title}
@@ -65,7 +64,7 @@ const Projects = () => {
                                     {project.description}
                                 </p>
 
-                                {/* Technologies */}
+                           
                                 <div className="mt-4 flex flex-wrap gap-2">
                                     {project.technologies
                                         .slice(0, 4)
@@ -79,7 +78,7 @@ const Projects = () => {
                                         ))}
                                 </div>
 
-                                {/* Actions */}
+                             
                                 <div className="mt-5 flex items-center justify-between border-t border-slate-700/60 pt-4">
                                     <Link
                                         to={`/projects/${project.id}`}
@@ -104,7 +103,7 @@ const Projects = () => {
                     ))}
                 </div>
 
-                {/* View All */}
+            
                 <div className="mt-8 flex justify-center">
                     <Link
                         to="/projects"

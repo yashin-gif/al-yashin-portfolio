@@ -20,14 +20,13 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative overflow-hidden bg-[#07111f] pt-[92px] pb-16 sm:pt-[104px] sm:pb-20"
-        >
-            {/* Background */}
+            className="relative overflow-hidden bg-[#07111f] pt-[92px] pb-16 sm:pt-[104px] sm:pb-20">
+    
             <HeroBackground />
 
             <div className="relative mx-auto grid w-[92%] max-w-[1240px] items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
 
-                {/* Left Content */}
+      
                 <div className="max-w-2xl">
 
                     <p className="mb-2 text-sm font-medium text-teal-400">
@@ -39,7 +38,7 @@ const Hero = () => {
                     </h1>
 
                     <h2 className="mt-3 text-xl font-semibold text-slate-300 sm:text-2xl">
-                        Full Stack Developer{" "}
+                      	Junior Full-Stack Developer{" "}
                         <span className="text-teal-400">|</span>{" "}
                         Problem Solver
                     </h2>
@@ -50,10 +49,10 @@ const Hero = () => {
                         reliable digital solutions with modern technologies.
                     </p>
 
-                    {/* Buttons */}
+         
                     <div className="mt-7 flex flex-wrap gap-3">
 
-                        {/* View Projects */}
+          
                         <button
                             type="button"
                             onClick={handleProjectsClick}
@@ -63,7 +62,7 @@ const Hero = () => {
                             <ArrowRight size={16} />
                         </button>
 
-                        {/* Download Resume */}
+               
                         <a
                             href="/resume/Al-Yashin-Resume.pdf"
                             download
@@ -74,17 +73,17 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    {/* Availability + Social Links */}
+           
                     <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
                         <AvailabilityBadge />
                         <SocialLinks />
                     </div>
 
-                    {/* Highlights */}
+              
                     <HighlightCards />
                 </div>
 
-                {/* Right - Profile */}
+          
                 <div className="flex justify-center lg:justify-end">
                     <ProfilePhoto src="/images/profile/profile.jpg" />
                 </div>
