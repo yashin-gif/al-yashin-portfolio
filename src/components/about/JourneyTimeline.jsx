@@ -54,7 +54,7 @@ const JourneyTimeline = () => {
             <ol className="grid gap-6 pt-4 sm:grid-cols-2 lg:grid-cols-6 lg:gap-4">
                 {steps.map(({ icon: Icon, title, text }, index) => (
                     <li key={title} className="relative">
-                        {/* পরের ধাপের সাথে জোড়ার রেখা (শুধু laptop-এ) */}
+                     
                         {index < steps.length - 1 && (
                             <span className="absolute -right-3 left-12 top-5 hidden h-px bg-slate-700 lg:block" />
                         )}

@@ -43,7 +43,7 @@ const ProjectDetails = () => {
     return (
         <>
             <main className="relative overflow-hidden bg-slate-900 pb-16 pt-[100px] sm:pb-20 sm:pt-[110px]">
-                {/* Background Glow */}
+          
                 <div className="pointer-events-none absolute -right-32 top-10 h-72 w-72 rounded-full bg-teal-400/5 blur-3xl" />
                 <div className="pointer-events-none absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-blue-500/5 blur-3xl" />
 
@@ -68,7 +68,7 @@ const ProjectDetails = () => {
                     </div>
 
                     <div className="mt-6 grid gap-5 lg:grid-cols-[1.7fr_1fr]">
-                        {/* Main column */}
+                 
                         <div className="space-y-5">
                             <DetailsPanel icon={FileText} title="Overview">
                                 <p className="text-sm leading-7 text-slate-300">
@@ -95,7 +95,6 @@ const ProjectDetails = () => {
                             )}
                         </div>
 
-                        {/* Sidebar */}
                         <div className="space-y-5 lg:self-start">
                             <DetailsPanel icon={Code} title="Tech Stack">
                                 <TechTags items={techStack} />

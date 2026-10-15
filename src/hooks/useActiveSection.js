@@ -7,7 +7,7 @@ const useActiveSection = (ids, enabled = true) => {
         if (!enabled) return;
 
         const update = () => {
-            // পর্দার ওপর থেকে ৪০% জায়গার রেখা
+         
             const line = window.innerHeight * 0.4;
             let current = ids[0];
 

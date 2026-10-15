@@ -17,7 +17,7 @@ body {
 
 html,
 body {
-    overflow-x: clip; /* পাশ থেকে আসার সময় নিচে scrollbar আসা ঠেকায় */
+    overflow-x: clip; 
 }
 
 [data-reveal] {
